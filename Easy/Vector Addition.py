@@ -1,6 +1,4 @@
-'''Vector Addition
-Easy
-Write a GPU program that performs element-wise addition of two vectors containing 32-bit floating point numbers. The program should take two input vectors of equal length and produce a single output vector containing their sum.
+"""Write a GPU program that performs element-wise addition of two vectors containing 32-bit floating point numbers. The program should take two input vectors of equal length and produce a single output vector containing their sum.
 
 Implementation Requirements
 External libraries are not permitted
@@ -17,12 +15,12 @@ Output: C = [3.8, 3.8, 3.8]
 Constraints
 Input vectors A and B have identical lengths
 1 ≤ N ≤ 100,000,000
-Performance is measured with N = 25,000,000'''
+Performance is measured with N = 25,000,000"""
 
 import torch
 
+
 # A, B, C are tensors on the GPU
 def solve(A: torch.Tensor, B: torch.Tensor, C: torch.Tensor, N: int):
-    
-    torch.add(A, B, out= C)
 
+    torch.add(A, B, out=C)
