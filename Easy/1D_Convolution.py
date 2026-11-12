@@ -55,5 +55,6 @@ def solve(
     input_size: int,
     kernel_size: int,
 ):
+
     windows = input.unfold(0, kernel_size, 1)
     output.copy_(windows @ kernel)
